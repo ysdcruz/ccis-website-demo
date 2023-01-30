@@ -126,7 +126,7 @@ $(document).on('click', '.save-close', function() {
     location.reload(true);
   
   if($(this).attr('data-re_login') == 'true')
-    window.location = 'server/signout.php';
+    window.location = 'server/signout.html';
 
   if($(this).hasClass('reply-delete'))
     window.location = $(this).attr('data-thread_Link');
@@ -140,7 +140,7 @@ $(document).on('click', '#sign-up-btn', function(evt) {
 
 $(document).on('click', '#log-in-btn', function(evt) {
     evt.preventDefault();
-    window.location = 'index.php';
+    window.location = 'index.html';
 });
 
 $(document).on('click', '#send-email-btn', function(evt) {
@@ -178,7 +178,7 @@ $(document).on('click', '#post-thread-btn', function() {
     let mm = String(today.getMonth() + 1).padStart(2, '0');
     let yy = today.getFullYear().toString().substr(2,2);
     today = mm + dd + yy;
-    window.location = 'thread.php?ID=1/' + today + '/' + threadLink;
+    window.location = 'thread.html?ID=1/' + today + '/' + threadLink;
   }
 });
 
@@ -189,7 +189,7 @@ $(document).on('click', '#thread-reply-btn', function() {
     setBodyFixed(true);
   } else {
     let threadDetail = $(this).attr('data-thread_Detail');
-    window.location = 'thread.php?ID=1&reply=1' + threadDetail;
+    window.location = 'thread.html?ID=1&reply=1' + threadDetail;
   }
 });
 

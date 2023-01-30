@@ -1866,14 +1866,14 @@ footer a:not(.page-foot-icon-container a) {
 
 /* ************* Page Specific Style ************** */
 /* ________________________________________________ */
-/* index.php */
+/* index.html */
 #home-content {
     margin: 0 auto;
 }
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* sign-in.php */
+/* sign-in.html */
 header.sign-in-header {
     position: relative;
 }
@@ -2278,7 +2278,7 @@ header.sign-in-header {
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* forgot-password.php */
+/* forgot-password.html */
 header.forgot-pass-header {
     position: absolute;
 }
@@ -2410,7 +2410,7 @@ header.forgot-pass-header {
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* news.php/announcements.php */
+/* news.html/announcements.html */
 #recent-news-container {
     display: flex;
     margin-bottom: 1em;
@@ -2677,7 +2677,7 @@ header.forgot-pass-header {
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* post.php */
+/* post.html */
 #post-details {
     display: flex;
     flex-direction: column;
@@ -2792,7 +2792,7 @@ header.forgot-pass-header {
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* programs.php */
+/* programs.html */
 #main-inner.inner-swipe {
     display: flex;
     flex-direction: row;
@@ -2875,7 +2875,7 @@ header.forgot-pass-header {
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* organizations.php */
+/* organizations.html */
 .flex-box {
     display: flex;
     flex-wrap: wrap;
@@ -3041,7 +3041,7 @@ header.forgot-pass-header {
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* handbook.php */
+/* handbook.html */
 #pdf-link-container a {
     color: #2B463C;
     font-weight: bold;
@@ -3073,7 +3073,7 @@ header.forgot-pass-header {
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* forms.php */
+/* forms.html */
 .form {
     display: grid;
     position: relative;
@@ -3159,7 +3159,7 @@ header.forgot-pass-header {
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* faculty.php */
+/* faculty.html */
 .faculty-container {
     box-sizing: border-box;
     display: grid;
@@ -3220,7 +3220,7 @@ header.forgot-pass-header {
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* forum.php */
+/* forum.html */
 #main-inner.width-limit.thread-layout {
     display: grid;
 }
@@ -3702,7 +3702,7 @@ header.forgot-pass-header {
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* submit.php */
+/* submit.html */
 #new-thread-layout {
     display: grid;
 }
@@ -4027,7 +4027,7 @@ header.forgot-pass-header {
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* search.php (forum) */
+/* search.html (forum) */
 #search-content > #search-sidebar {
     align-items: center;
     border-color: #3E6A50;
@@ -4085,7 +4085,7 @@ header.forgot-pass-header {
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* thread.php */
+/* thread.html */
 #link-copied {
     display: none;
     position: fixed;
@@ -4598,7 +4598,7 @@ header.forgot-pass-header {
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* gallery.php */
+/* gallery.html */
 #banner {
     background-color: #FFF;
 }
@@ -4726,7 +4726,7 @@ header.forgot-pass-header {
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* search.php (general) */
+/* search.html (general) */
 #search-top {
     position: relative;
     width: 100%;
@@ -4943,7 +4943,7 @@ header.forgot-pass-header {
 /* ________________________________________________ */
 
 /* ________________________________________________ */
-/* profile.php */
+/* profile.html */
 .profile-width-limit {
     margin: 0 auto 3em;
 }
@@ -6325,7 +6325,7 @@ h4.settings-label {
             font-size: 1.2em;
         }
 
-        .php-right-arrow {
+        .html-right-arrow {
             font-size: 1.2em;
         }
         /* _________________________________________ */
@@ -6392,7 +6392,7 @@ h4.settings-label {
 
         /* ********** Page Specific Style ********** */
         /* _________________________________________ */
-        /* sign-in.php */
+        /* sign-in.html */
         #website-header-container #ccis.sign-in-ccis {
             font-size: 2em;
         }
@@ -6489,7 +6489,7 @@ h4.settings-label {
         /* _________________________________________ */
 
         /* _________________________________________ */
-        /* forgot-password.php */
+        /* forgot-password.html */
         .forgot-pass-header #website-header-container #ccis {
             font-size: 2em;
         }
@@ -6508,7 +6508,7 @@ h4.settings-label {
         /* _________________________________________ */
 
         /* _________________________________________ */
-        /* news.php/announcements.php */
+        /* news.html/announcements.html */
         #recent-news-container {
             flex-direction: column;
         }
@@ -6609,7 +6609,7 @@ h4.settings-label {
         /* _________________________________________ */
         
         /* _________________________________________ */
-        /* post.php */
+        /* post.html */
         #post-date {
             font-size: 0.7em;
         }
@@ -6620,7 +6620,7 @@ h4.settings-label {
         /* _________________________________________ */
         
         /* _________________________________________ */
-        /* programs.php */
+        /* programs.html */
         .programs-prompt {
             font-size: 0.85em;
         }
@@ -6631,7 +6631,7 @@ h4.settings-label {
         /* _________________________________________ */
             
         /* _________________________________________ */
-        /* organizations.php */
+        /* organizations.html */
         .grp-box {
             width: 90%;
         }
@@ -6661,14 +6661,14 @@ h4.settings-label {
         /* _________________________________________ */
         
         /* _________________________________________ */
-        /* handbook.php */
+        /* handbook.html */
         #pdf-container {
             display: none;
         }
         /* _________________________________________ */
         
         /* _________________________________________ */
-        /* forms.php */
+        /* forms.html */
         .form {
             grid-template-columns: 3em auto;
             column-gap: 1em;
@@ -6699,7 +6699,7 @@ h4.settings-label {
         /* _________________________________________ */
         
         /* _________________________________________ */
-        /* faculty.php */
+        /* faculty.html */
         .faculty-grid {
             width: 100%;
         }
@@ -6727,7 +6727,7 @@ h4.settings-label {
         /* _________________________________________ */
         
         /* _________________________________________ */
-        /* forum.php */
+        /* forum.html */
         .forum-header > h2 {
             width: 85%;
         }
@@ -6878,7 +6878,7 @@ h4.settings-label {
         /* _________________________________________ */
 
         /* _________________________________________ */
-        /* submit.php */
+        /* submit.html */
         #new-content-identity {
             flex-direction: column;
         }
@@ -6910,7 +6910,7 @@ h4.settings-label {
         /* _________________________________________ */
 
         /* _________________________________________ */
-        /* thread.php */
+        /* thread.html */
         #thread-starter {
             grid-template-columns: 3em auto;
             padding: 2em 1em 0.2em;
@@ -6959,7 +6959,7 @@ h4.settings-label {
         /* _________________________________________ */
 
         /* _________________________________________ */
-        /* gallery.php */
+        /* gallery.html */
         .banner-image {
             height: 15em;
         }
@@ -6985,7 +6985,7 @@ h4.settings-label {
         /* _________________________________________ */
 
         /* _________________________________________ */
-        /* search.php (general) */
+        /* search.html (general) */
         #search-top > #modal-search-container {
             margin: 0 1em;
         }
@@ -7006,7 +7006,7 @@ h4.settings-label {
         /* _________________________________________ */
 
         /* _________________________________________ */
-        /* profile.php */
+        /* profile.html */
         #profile-header {
             grid-template-columns: 25% 70%;
             padding: 1em;
@@ -7210,7 +7210,7 @@ h4.settings-label {
 
             /* ********** Page Specific Style ********** */
             /* _________________________________________ */
-            /* sign-in.php */
+            /* sign-in.html */
             #website-header-container #ccis.sign-in-ccis {
                 font-size: 2em;
             }
@@ -7221,14 +7221,14 @@ h4.settings-label {
             /* _________________________________________ */
 
             /* _________________________________________ */
-            /* forgot-password.php */
+            /* forgot-password.html */
             .forgot-pass-header #website-header-container #ccis {
                 font-size: 2em;
             }
             /* _________________________________________ */
 
             /* _________________________________________ */
-            /* news.php/announcements.php */
+            /* news.html/announcements.html */
             #featured-news {
                 height: 20em;
                 width: 50%;
@@ -7257,28 +7257,28 @@ h4.settings-label {
             /* _________________________________________ */
         
             /* _________________________________________ */
-            /* student-handbook.php */
+            /* student-handbook.html */
             #pdf-container {
                 display: none;
             }
             /* _________________________________________ */
             
             /* _________________________________________ */
-            /* faculty.php */
+            /* faculty.html */
             .faculty-grid {
                 width: 100%;
             }
             /* _________________________________________ */
 
             /* _________________________________________ */
-            /* gallery.php */
+            /* gallery.html */
             .banner-image {
                 height: 25em;
             }
             /* _________________________________________ */
             
             /* _________________________________________ */
-            /* profile.php */
+            /* profile.html */
             #new-req-modal > .modal-content {
                 width: 40em;
             }
@@ -7324,7 +7324,7 @@ h4.settings-label {
 
             /* ********** Page Specific Style ********** */
             /* _________________________________________ */
-            /* sign-in.php */
+            /* sign-in.html */
             #website-header-container #ccis.sign-in-ccis {
                 font-size: 2.5em;
             }
@@ -7335,14 +7335,14 @@ h4.settings-label {
             /* _________________________________________ */
 
             /* _________________________________________ */
-            /* forgot-password.php */
+            /* forgot-password.html */
             .forgot-pass-header #website-header-container #ccis {
                 font-size: 2.5em;
             }
             /* _________________________________________ */
 
             /* _________________________________________ */
-            /* news.php/announcements.php */
+            /* news.html/announcements.html */
             #featured-news {
                 height: 30em;
                 width: 60%;
@@ -7367,7 +7367,7 @@ h4.settings-label {
             /* _________________________________________ */
             
             /* _________________________________________ */
-            /* student-handbook.php */
+            /* student-handbook.html */
             #pdf-link {
                 display: none;
             }
@@ -7378,21 +7378,21 @@ h4.settings-label {
             /* _________________________________________ */
             
             /* _________________________________________ */
-            /* faculty.php */
+            /* faculty.html */
             .faculty-grid {
                 width: 90%;
             }
             /* _________________________________________ */
 
             /* _________________________________________ */
-            /* gallery.php */
+            /* gallery.html */
             .banner-image {
                 height: 35em;
             }
             /* _________________________________________ */
             
             /* _________________________________________ */
-            /* profile.php */
+            /* profile.html */
             #new-req-modal > .modal-content {
                 width: 80%;
             }
@@ -7685,7 +7685,7 @@ h4.settings-label {
             font-size: 0.9em;
         }
 
-        .php-right-arrow {
+        .html-right-arrow {
             font-size: 1.2em;
         }
         /* ***************************************** */
@@ -7741,7 +7741,7 @@ h4.settings-label {
         
         /* ********** Page Specific Style ********** */
         /* _________________________________________ */
-        /* sign-in.php */
+        /* sign-in.html */
         #form-container {
             height: 32em;
         }
@@ -7828,7 +7828,7 @@ h4.settings-label {
         /* _________________________________________ */
 
         /* _________________________________________ */
-        /* forgot-password.php */
+        /* forgot-password.html */
         #forgot-pass-container > div h1 {
             font-size: 1.8em;
         }
@@ -7843,7 +7843,7 @@ h4.settings-label {
         /* _________________________________________ */
 
         /* _________________________________________ */
-        /* news.php/announcements.php */
+        /* news.html/announcements.html */
         #recent-news-container {
             flex-direction: row;
         }
@@ -7939,7 +7939,7 @@ h4.settings-label {
         /* _________________________________________ */
         
         /* _________________________________________ */
-        /* programs.php */
+        /* programs.html */
         #back-prompt {
             font-size: 0.9em;
         }
@@ -7952,7 +7952,7 @@ h4.settings-label {
         /* _________________________________________ */
           
         /* _________________________________________ */
-        /* organizations.php */
+        /* organizations.html */
         .grp-box {
             width: 45%;
         }
@@ -7990,7 +7990,7 @@ h4.settings-label {
         /* _________________________________________ */
          
         /* _________________________________________ */
-        /* forms.php */
+        /* forms.html */
         .form {
             grid-template-columns: 5em auto 3em;
             column-gap: 1em;
@@ -8033,7 +8033,7 @@ h4.settings-label {
         /* _________________________________________ */
         
         /* _________________________________________ */
-        /* faculty.php */
+        /* faculty.html */
         .faculty-container {
             grid-template-rows: 50% auto;
             margin: 1em auto;
@@ -8068,7 +8068,7 @@ h4.settings-label {
         /* _________________________________________ */
         
         /* _________________________________________ */
-        /* forum.php */
+        /* forum.html */
         .forum-header > h2 {
             width: 75%;
         }
@@ -8183,7 +8183,7 @@ h4.settings-label {
         /* _________________________________________ */
 
         /* _________________________________________ */
-        /* submit.php */
+        /* submit.html */
         #new-content-identity {
             flex-direction: row;
         }
@@ -8208,7 +8208,7 @@ h4.settings-label {
         /* _________________________________________ */
 
         /* _________________________________________ */
-        /* thread.php */
+        /* thread.html */
         #thread-starter {
             grid-template-columns: 4em auto;
         }
@@ -8256,7 +8256,7 @@ h4.settings-label {
         /* _________________________________________ */
 
         /* _________________________________________ */
-        /* gallery.php */
+        /* gallery.html */
         #prev-banner, #next-banner {
             padding: 0.8em 0.5em;
         }
@@ -8287,7 +8287,7 @@ h4.settings-label {
         /* _________________________________________ */
 
         /* _________________________________________ */
-        /* search.php (general) */
+        /* search.html (general) */
         #search-top > #modal-search-container {
             margin: 0 2em;
         }
@@ -8308,7 +8308,7 @@ h4.settings-label {
         /* _________________________________________ */
 
         /* _________________________________________ */
-        /* profile.php */
+        /* profile.html */
         #profile-header {
             grid-template-columns: 25% 72%;
             padding: 1em 2em;
@@ -8801,14 +8801,14 @@ h4.settings-label {
 
     /* ********** Page Specific Style ********** */
     /* _________________________________________ */
-    /* index.php */
+    /* index.html */
     #home-content {
         padding: 1em 0;
     }
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* sign-in.php */
+    /* sign-in.html */
     .sign-in-header #website-header-container #website-header {
         padding: 1em;
     }
@@ -8870,7 +8870,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* forgot-password.php */
+    /* forgot-password.html */
     #close-white {
         display: none;
     }
@@ -8886,7 +8886,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* contact-us.php */
+    /* contact-us.html */
     #contact-logo {
         height: 5em;
         width: 5em;
@@ -8894,7 +8894,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* news.php/announcements.php */
+    /* news.html/announcements.html */
     #featured-news-caption {
         line-height: 1.5em;
     }
@@ -8909,14 +8909,14 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* programs.php */
+    /* programs.html */
     #back-prompt::after {
         left: 0;
     }
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* organizations.php */
+    /* organizations.html */
     .grp-box {
         height: 25em;
     }
@@ -8935,7 +8935,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* forms.php */
+    /* forms.html */
     .form {
         width: 100%;
     }
@@ -8954,7 +8954,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* forum.php */
+    /* forum.html */
     #main-inner.width-limit.thread-layout {
         grid-template-areas: 
             'header'
@@ -9012,7 +9012,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* submit.php */
+    /* submit.html */
     #new-thread-layout {
         grid-template-areas: 
             'header'
@@ -9061,7 +9061,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* search.php (forum) */
+    /* search.html (forum) */
     #search-content > #search-sidebar {
         align-items: center;
         margin: 1em 0.5em 0 0.5em;
@@ -9072,7 +9072,7 @@ h4.settings-label {
     /* _________________________________________ */
     
     /* _________________________________________ */
-    /* thread.php */
+    /* thread.html */
     .main-thread-container {
         margin-top: 1em;
     }
@@ -9118,7 +9118,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* gallery.php */
+    /* gallery.html */
     #prev-slide, #next-slide {
         width: 3em;
     }
@@ -9134,7 +9134,7 @@ h4.settings-label {
     /* _________________________________________ */
     
     /* _________________________________________ */
-    /* search.php (general) */
+    /* search.html (general) */
     #search-top {
         padding-top: 2em;
     }
@@ -9182,7 +9182,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* profile.php */
+    /* profile.html */
     #profile-header {
         column-gap: 1em;
         margin: 0.5em 0 1em;
@@ -9900,7 +9900,7 @@ h4.settings-label {
         font-size: 1.2em;
     }
     
-    .php-right-arrow {
+    .html-right-arrow {
         font-size: 1.2em;
     }
     /* ***************************************** */
@@ -9981,7 +9981,7 @@ h4.settings-label {
 
     /* ********** Page Specific Style ********** */
     /* _________________________________________ */
-    /* index.php */
+    /* index.html */
     #home-content {
         padding: 1em 0 3em;
     }
@@ -9992,7 +9992,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* sign-in.php */
+    /* sign-in.html */
     .sign-in-header #website-header-container #website-header {
         padding: 2em 1em;
     }
@@ -10192,7 +10192,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* forgot-password.php */
+    /* forgot-password.html */
     .forgot-pass-header #website-header-container #website-header {
         padding: 2em 1em;
     }
@@ -10234,7 +10234,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* contact-us.php */
+    /* contact-us.html */
     #contact-logo {
         height: 8em;
         width: 8em;
@@ -10242,7 +10242,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* news.php/announcements.php */
+    /* news.html/announcements.html */
     #recent-news-container {
         flex-direction: row;
     }
@@ -10374,7 +10374,7 @@ h4.settings-label {
     /* _________________________________________ */
     
     /* _________________________________________ */
-    /* programs.php */
+    /* programs.html */
     #program-container {
         width: 50em;
     }
@@ -10432,7 +10432,7 @@ h4.settings-label {
     /* _________________________________________ */
         
     /* _________________________________________ */
-    /* organizations.php */
+    /* organizations.html */
     .grp-box {
         height: 30em;
         width: 45%;
@@ -10476,7 +10476,7 @@ h4.settings-label {
     /* _________________________________________ */
         
     /* _________________________________________ */
-    /* handbook.php */
+    /* handbook.html */
     #pdf-link-container {
         display: none;
     }
@@ -10487,7 +10487,7 @@ h4.settings-label {
     /* _________________________________________ */
     
     /* _________________________________________ */
-    /* forms.php */
+    /* forms.html */
     .form {
         grid-template-columns: 12em auto 3em;
         column-gap: 1em;
@@ -10547,7 +10547,7 @@ h4.settings-label {
     /* _________________________________________ */
         
     /* _________________________________________ */
-    /* faculty.php */
+    /* faculty.html */
     .faculty-container {
         grid-template-columns: 28% auto;
         margin: 1em auto;
@@ -10581,7 +10581,7 @@ h4.settings-label {
     /* _________________________________________ */
     
     /* _________________________________________ */
-    /* forum.php */
+    /* forum.html */
     #main-inner.width-limit.thread-layout {
         grid-template-areas: 
             'header sidebar'
@@ -10775,7 +10775,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* submit.php */
+    /* submit.html */
     #new-thread-layout {
         grid-template-areas: 
             'header sidebar'
@@ -10841,7 +10841,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* search.php (forum) */
+    /* search.html (forum) */
     #search-content {
         margin: 1em 2em 0 5em;
     }
@@ -10852,7 +10852,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* thread.php */
+    /* thread.html */
     .main-thread-container {
         margin: 1em 2em 1em 5em;
     }
@@ -10932,7 +10932,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* gallery.php */
+    /* gallery.html */
     #prev-banner, #next-banner {
         padding: 0.8em 0.5em;
     }
@@ -10971,7 +10971,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* search.php (general) */
+    /* search.html (general) */
     #search-top {
         padding-top: 3em;
     }
@@ -11021,7 +11021,7 @@ h4.settings-label {
     /* _________________________________________ */
 
     /* _________________________________________ */
-    /* profile.php */
+    /* profile.html */
     .profile-width-limit {
         max-width: 70em;
     }

@@ -247,7 +247,7 @@ function signupPageAnime() {
     $('#sign-in-container').css('right', '-100%');
     $('#sign-in-container').fadeOut(800);
         
-    $('#sign-up-container').css('display', 'flex').hide().fadeIn(800);
+    $('#sign-up-container').css('display', 'flex').hide().fadeIn(800)
     setTimeout(function() {
       $('#sign-up-container').css('left', '0');
     }, 300);
@@ -385,6 +385,33 @@ function cancelReplyUpdate(type) {
     $('#write-reply').addClass('hidden');
 }
 
+function setUndergraduateInfo(element) {
+  $('#program-header').html(htmlDecode($(element).attr('data-header')));
+  $('#program-desc').html(htmlDecode($(element).attr('data-desc')));
+  $('#program-mission').html(htmlDecode($(element).attr('data-mission')));
+  $('#program-objective-intro').html(htmlDecode($(element).attr('data-objective-intro')));
+  $('#program-objective').html(htmlDecode($(element).attr('data-objective')));
+  $('#program-admission-intro').html(htmlDecode($(element).attr('data-admission-intro')));
+  $('#program-reqs-freshmen').html(htmlDecode($(element).attr('data-reqs-freshmen')));
+  $('#program-reqs-shiftee').html(htmlDecode($(element).attr('data-reqs-shiftee')));
+  $('#program-reqs-transferee').html(htmlDecode($(element).attr('data-reqs-transferee')));
+  $('#program-retention').html(htmlDecode($(element).attr('data-retention')));
+  $('#program-reqs-graduation').html(htmlDecode($(element).attr('data-reqs-graduation')));
+  $('#program-career').html(htmlDecode($(element).attr('data-career')));
+
+  window.location.hash = $(element).attr('data-hash');
+}
+
+function setGraduateInfo(element) {
+  $('#program-header').html(htmlDecode($(element).attr('data-header')));
+  $('#program-desc').html(htmlDecode($(element).attr('data-desc')));
+  $('#program-objective-intro').html(htmlDecode($(element).attr('data-objective-intro')));
+  $('#program-objective').html(htmlDecode($(element).attr('data-objective')));
+  $('#program-provisions').html(htmlDecode($(element).attr('data-provisions')));
+
+  window.location.hash = $(element).attr('data-hash');
+}
+
 function resetProgram() {
   $('#program-header').html('');
   $('#program-desc').html('');
@@ -438,9 +465,9 @@ function setGenSearch() {
       type = '&type=' + ($('#search-page').hasClass('is-selected') ? 'page' : 'news');
 
     if(parentDir == 'CCIS_Website') {
-      window.location = 'search.php?search=' + newSearch + type;
+      window.location = 'search.html?search=' + newSearch + type;
     } else
-      window.location = '../search.php?search=' + newSearch + type;
+      window.location = '../search.html?search=' + newSearch + type;
   }
 }
 
@@ -638,12 +665,12 @@ $(document).on('click', '#user-container', function() {
       setBodyFixed($('#profile-nav').hasClass('profile-toggle'));
     }
   } else
-    window.location = 'sign-in.php#log-in';
+    window.location = 'sign-in.html#log-in';
 });
 
 $(document).on('click', '#sign-in-close', function() {
   if($('#forgot-pass-container').length)
-    window.location = 'sign-in.php#log-in';
+    window.location = 'sign-in.html#log-in';
   else
     window.history.back();
 });
@@ -858,11 +885,11 @@ $(document).on('input change cut paste drop keyup', '#sign-up-container input, #
 });
 
 $(document).on('click', '#reset-fail-btn', function() {
-  window.location = 'forgot-password.php';
+  window.location = 'forgot-password.html';
 });
 
 $(document).on('click', '#reset-success-btn', function() {
-  window.location = 'sign-in.php#log-in';
+  window.location = 'sign-in.html#log-in';
 });
 
 $(document).on('click', '#recent-news > .preview-article, .recent-dot', function() {
@@ -902,7 +929,7 @@ $(document).on('click', '#back-prompt', function() {
 });
 
 $(document).on('click', '#new-thread', function() {
-  window.location = 'forum/submit.php';
+  window.location = 'forum/submit.html';
 });
 
 $(document).on('click', '#search-sidebar, #search-sidebar > i', function() {
@@ -966,10 +993,10 @@ $(document).on('keypress', '#forum-search', function(evt) {
         }
       }
 
-      if(current == 'forum.php') {
-        window.location = 'forum/search.php?search=' + newSearch;
+      if(current == 'forum.html') {
+        window.location = 'forum/search.html?search=' + newSearch;
       } else
-        window.location = 'search.php?search=' + newSearch;
+        window.location = 'search.html?search=' + newSearch;
     }
   }
 });
@@ -980,14 +1007,14 @@ $(document).on('click', '.tag', function() {
   let current = path.substring(index);
   let search = '[' + $(this).html() + ']';
 
-  if(current == 'forum.php') {
-    window.location = 'forum/search.php?search=' + search;
+  if(current == 'forum.html') {
+    window.location = 'forum/search.html?search=' + search;
   } else
-    window.location = 'search.php?search=' + search;
+    window.location = 'search.html?search=' + search;
 });
 
 $(document).on('click', '#search-new-thread', function() {
-  window.location = 'submit.php';
+  window.location = 'submit.html';
 });
 
 $(document).on('click', '.forum-dropdown-selected', function() {
@@ -1359,11 +1386,11 @@ $(document).on('click', '#search-type > div:not(#search-type-selected)', functio
   let search = url.searchParams.get('search');
 
   if($(this).attr('id') == 'search-thread') {
-    window.location = 'forum/search.php?search=' + search;
+    window.location = 'forum/search.html?search=' + search;
   } else {
     let type = $(this).attr('id') == 'search-page' ? 'page' : 'news';
   
-    window.location = 'search.php?search=' + search + '&type=' + type;
+    window.location = 'search.html?search=' + search + '&type=' + type;
   }
 });
 
@@ -1420,7 +1447,7 @@ $(document).on('click', '#change-pass', function() {
 });
 
 $(document).on('click', '.share-fb', function() {
-  let URL = 'https://facebook.com/sharer.php?u=' + encodeURI(document.location.href) + '&text=' + encodeURI(document.title);
+  let URL = 'https://facebook.com/sharer.html?u=' + encodeURI(document.location.href) + '&text=' + encodeURI(document.title);
   window.open(URL);
   return false;
 });
@@ -1543,7 +1570,7 @@ $(document).ready(function() {
     let path = window.location.pathname;
     let page = path.split('/').pop();
 
-    if(windowSize == 'L' && page != 'home.php' && window.scrollY > 0)
+    if(windowSize == 'L' && page != 'home.html' && window.scrollY > 0)
       setStickyTitle(true);
     else
       setStickyTitle(false);
