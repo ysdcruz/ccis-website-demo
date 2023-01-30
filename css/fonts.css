@@ -1,0 +1,70 @@
+/* ---------------- WEBSITE FONTS ---------------- */
+
+@font-face {
+    font-family: "Cinzel";
+    src: url("../fonts/Cinzel-Regular.otf");
+}
+
+@font-face {
+    font-family: "Muli";
+    src: url("../fonts/Muli.ttf");
+}
+
+@font-face {
+    font-family: "Muli-Bold";
+    src: url("../fonts/Muli-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Muli-SemiBold";
+    src: url("../fonts/Muli-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Muli-Light";
+    src: url("../fonts/Muli-Light.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Regular.otf");
+}
+
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../fonts/Montserrat-Bold.otf");
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("../fonts/Montserrat-SemiBold.otf");
+}
+
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url("../fonts/Montserrat-Light.otf");
+}
+/* ----------------------------------------------- */
+
+body {
+    position: relative;
+    font-size: 0.9em;
+    font-family: "Montserrat-Light", "Muli-Light", sans-serif;
+    scrollbar-color: #5E5E5E #404040;
+    scrollbar-width: thin;
+}
+
+b {
+    font-family: "Montserrat", "Muli", sans-serif;
+}
+
+h3 {
+    font-family: "Montserrat-SemiBold", "Muli-SemiBold", sans-serif;
+    font-weight: lighter;
+}
+
+blockquote {
+    margin: 1em 3em 1em 1em;
+    padding-left: 2em;
+    border-left: 5px solid #DDD;
+}
