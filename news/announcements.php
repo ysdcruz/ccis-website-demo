@@ -83,20 +83,7 @@
           for(let i = 0; i < announceArray.length; i++)
             addRecentNews(announceArray[i]);
 
-          let page;
-
-          if(window.location.hash == '' || window.location.hash == '#/')
-            page = 1;
-          else
-            page = parseInt(window.location.hash.substring(2));
-          
-          if(isNaN(page) || page < 1)
-            page = 1;
-          else if(page > announceArray.length)
-            page = announceArray.length;
-
           slidePreview();
-          changeAnnouncePage(page);
         }
       };
     </script>

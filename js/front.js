@@ -328,6 +328,51 @@ function brToli(str) {
   return '<li>' + info.join('</li><li>') + '</li>';
 }
 
+function addRecentNews(postInfo) {
+  let article = document.createElement('article');
+  $(article).attr({
+    'class': 'preview-article',
+    'data-news_Link': postInfo.news_Link,
+    'data-img_Src': '../' + postInfo.cover_Img,
+    'data-img_Alt': postInfo.post_Title,
+    'data-prev_Head': postInfo.post_Title,
+    'data-prev_Date': postInfo.post_Create
+  });
+
+  let link = document.createElement('a');
+  $(link).attr({
+    'href': postInfo.news_Link,
+    'class': 'recent-thumbnail'
+  });
+
+  let thumbnail = document.createElement('img');
+  $(thumbnail).attr({
+    'src': '../' + postInfo.cover_Img,
+    'alt': postInfo.post_Title,
+  });
+
+  $(link).append(thumbnail);
+
+  let div = document.createElement('div');
+  
+  let previewHeadline = document.createElement('p');
+  $(previewHeadline).attr('class', 'preview-headline');
+
+  let headlineLink = document.createElement('a');
+  $(headlineLink).attr('href', postInfo.news_Link);
+  $(headlineLink).html(postInfo.post_Title);
+
+  $(previewHeadline).append(headlineLink);
+
+  let previewDate = document.createElement('p');
+  $(previewDate).attr('class', 'preview-date');
+  $(previewDate).html(postInfo.post_Create);
+
+  $(div).append(previewHeadline, previewDate);
+  $(article).append(link, div);
+  $(article).insertBefore('#preview-background');
+}
+
 function cancelReplyUpdate(type) {
   $('#input-header').html('Your ' + (type == 1 ? 'reply' : 'answer'));
   $('#body-thread').find('.ql-editor').html('<p><br></p>');
@@ -407,51 +452,6 @@ function setConfirmClose() {
 
   $('#confirm-yes-cancel').css('display', 'flex');
   $('#confirm-modal').css('display', 'flex');
-}
-
-function changeThreadPage(page) {
-  let totalPages = Math.ceil(threadArray.length / 5);
-
-  if(page < 1)
-    page = 1;
-  else if(page > totalPages)
-    page = totalPages;
-
-  $('#thread-section').find('.activity-container').empty();
-  for(let i = (page - 1) * 5; i < (page * 5); i++) {
-    if(threadArray[i] != undefined)
-      addThreadAct(threadArray[i]);
-  }
-
-  setThreadPageNumber(totalPages, page);
-}
-
-function addReplyAct(replyInfo) {
-  let activity = document.createElement('a');
-  $(activity).attr({
-    'class': 'activity',
-    'href': replyInfo.reply_link
-  });
-
-  let actVotes = document.createElement('div');
-  $(actVotes).attr('class', 'act-votes');
-
-  let vote = document.createElement('div');
-  $(vote).attr('class', parseInt(replyInfo.reply_upvotes) > 0 ? (replyInfo.answer_count == '1' ? 'answer' : 'positive') : (parseInt(replyInfo.reply_upvotes) < 0 ? 'negative' : ''));
-  $(vote).html(replyInfo.reply_upvotes);
-
-  $(actVotes).append(vote);
-
-  let actTitle = document.createElement('div');
-  $(actTitle).attr('class', 'act-title');
-  $(actTitle).html(replyInfo.thread_title);
-
-  let actDate = document.createElement('div');
-  $(actDate).attr('class', 'act-date');
-  $(actDate).html(replyInfo.create);
-
-  $(activity).append(actVotes, actTitle, actDate);
-  $('#reply-section').find('.activity-container').append(activity);
 }
 
 $(document).on('click', '.modal:not(#load-modal)', function(evt) {
